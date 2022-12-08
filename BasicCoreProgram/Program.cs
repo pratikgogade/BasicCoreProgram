@@ -11,7 +11,7 @@ namespace BasicCoreProgram
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.FlipCoin" + "\n" + "2.Leap Year" + "\n" + "3.Power Of Two" + "\n" + "4.Harmonic Number" + "\n" + "5.Prime Factor" + "\n" + "6.Quotient And Remainder" + "\n" + "7.Swapping Numbers" + "\n" + "8.Even And Odd" + "\n" + "9.Vowel Or Consonant" + "\n" + "10.Exit");
+                Console.WriteLine("1.FlipCoin" + "\n" + "2.Leap Year" + "\n" + "3.Power Of Two" + "\n" + "4.Harmonic Number" + "\n" + "5.Prime Factor" + "\n" + "6.Quotient And Remainder" + "\n" + "7.Swapping Numbers" + "\n" + "8.Even And Odd" + "\n" + "9.Vowel Or Consonant" + "\n" + "10.Largest Number" + "\n" + "11.Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -50,6 +50,10 @@ namespace BasicCoreProgram
                     case 9:
                         VowelConsonant vowelConsonant = new VowelConsonant();
                         vowelConsonant.Alphabet();
+                        break;
+                    case 10:
+                        LargestAmongThree largestAmongThree = new LargestAmongThree();
+                        largestAmongThree.Largest();
                         break;
                     default:
                         break;
